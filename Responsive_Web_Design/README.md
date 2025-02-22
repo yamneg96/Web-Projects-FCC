@@ -22,11 +22,15 @@ Here's a list of the certification projects in this repository:
 
 1.  Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design
     ```
 2.  Navigate to the project directory you want to explore:
     ```bash
-    cd <project_directory>
+    cd https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design/SurveyForm
+    cd https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design/TributePage
+    cd https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design/TechnicalDocumentationPage
+    cd https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design/ProductLandingPage
+    cd https://github.com/yamneg96/Web-Projects-FCC/tree/main/Responsive_Web_Design/PersonalPortfoliopage
     ```
 3.  Open the `index.html` file in your web browser.
 
