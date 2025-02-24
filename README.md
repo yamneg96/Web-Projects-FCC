@@ -3,7 +3,7 @@
 
 This repository documents my journey and accomplishments in earning certifications from FCC (freeCodeCamp.org) 🎓.
 
-### Completed Certifications ✅
+### Ongoing Courses ✅
 
 1. **Responsive Web Design Certification 💻📱**
    - Demonstrates my ability to create responsive and accessible websites using HTML and CSS. 🎨
