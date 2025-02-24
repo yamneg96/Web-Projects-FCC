@@ -1,0 +1,11 @@
+h1, p{
+  text-align: center;
+}
+body{
+  background-color: #1b1b32;
+  color: #f3f3f3;
+  font-family: sans-serif;
+}
+form{
+  background-color: #1b1b32CC;
+}
