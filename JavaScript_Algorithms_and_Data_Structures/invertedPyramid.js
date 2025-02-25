@@ -17,8 +17,15 @@ function padRow(rowNumber, rowCount) {
 }*/
 
 //Now we commented this one to see another approach for the inverted pyramid.
-for (let i = count; i > 0; i--) {
-  rows.push(padRow(i, count));
+// for (let i = count; i > 0; i--) { //This one using the <<Push method with the backward counting>>.
+//   rows.push(padRow(i, count));
+// }
+for (let i = 1; i <= count; i++) {//Finally a generator function to create the inverted or standard pyramid.
+  if (inverted) {
+    rows.unshift(padRow(i, count));
+  } else {
+    rows.push(padRow(i, count));
+  }
 }
 
 let result = ""
