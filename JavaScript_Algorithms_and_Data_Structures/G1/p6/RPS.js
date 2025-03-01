@@ -37,36 +37,32 @@ const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
 
 function showResults(userOption) {
-  const resultMessage = getRoundResults(userOption);
-  roundResultsMsg.innerText = resultMessage;
-  playerScoreSpanElement.innerText = playerScore;
+  roundResultsMsg.innerText = getRoundResults(userOption);
   computerScoreSpanElement.innerText = computerScore;
+  playerScoreSpanElement.innerText = playerScore;
 
-  if (playerScore === 3) {
-    winnerMsgElement.innerText = "Player has won the game!";
-    winnerMsgElement.style.display = "block"; // Show the winner message
-    optionsContainer.style.display = "none";  // Hide options
-    resetGameBtn.style.display = "block";     // Show reset button
-  } else if (computerScore === 3) {
-    winnerMsgElement.innerText = "Computer has won the game!";
-    winnerMsgElement.style.display = "block"; // Show the winner message
-    optionsContainer.style.display = "none";  // Hide options
-    resetGameBtn.style.display = "block";     // Show reset button
+  if (playerScore === 3 || computerScore === 3) {
+    winnerMsgElement.innerText = `${
+      playerScore === 3 ? "Player" : "Computer"
+    } has won the game!`;
+
+    resetGameBtn.style.display = "block";
+    optionsContainer.style.display = "none";
   }
-}
 
-resetGameBtn.addEventListener("click", function () {
+};
+function resetGame() {
   playerScore = 0;
   computerScore = 0;
   playerScoreSpanElement.innerText = playerScore;
   computerScoreSpanElement.innerText = computerScore;
-  roundResultsMsg.innerText = "";
-  winnerMsgElement.innerText = "";
-  winnerMsgElement.style.display = "none"; // Hide winner message on reset
-  optionsContainer.style.display = "block";
   resetGameBtn.style.display = "none";
-});
+  optionsContainer.style.display = "flex"; // Or "block", depending on your CSS
+  winnerMsgElement.innerText = "";
+  roundResultsMsg.innerText = "";
+}
 
+resetGameBtn.addEventListener("click", resetGame);
 
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
