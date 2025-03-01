@@ -37,7 +37,7 @@ A fun, interactive web game where you play against the computer to see who reach
 - The **Reset** button restarts the game.
 
 ## 📸 Screenshot
-![Rock Paper Scissors Game Preview](preview.png)
+![Rock Paper Scissors Game Preview](./image.png)
 
 ## 🔑 How to Run
 1. Clone the repo 📥
