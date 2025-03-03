@@ -26,3 +26,5 @@ function getGrade(score) {
 console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
+console.log(getGrade(100));
+console.log(getGrade(0));
