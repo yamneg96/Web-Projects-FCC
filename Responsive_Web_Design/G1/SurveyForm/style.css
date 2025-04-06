@@ -13,11 +13,9 @@ body{
 
 form{
   background-color: #1b1b32CC;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
 }
 
 #personal-info{
@@ -26,9 +24,17 @@ form{
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  border: 0;
+}
+#full-name #email #Age{ 
+  border: 0;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
 }
 
 #survey-info{
+  border: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +43,16 @@ form{
 }
 
 #favorite-feature{
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#improvement{
+  border: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
