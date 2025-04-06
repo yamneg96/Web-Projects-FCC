@@ -21,22 +21,22 @@ form{
   width: 80%;
   height: auto;
 }
-label{
+
+/* label{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   flex-wrap: nowrap;
-  width: 100%;
+  /* width: 100%; 
   margin: 10px;
   color: #f3f3f3;
   margin: 10px;
-}
+} */
+
 #personal-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   flex-wrap: nowrap;
   border: 0;
   margin: 10px;
@@ -48,15 +48,14 @@ input[type="text"], input[type="email"], input[type="number"]{
   margin: 10px;
   padding: 10px;
   width: 100%;
-  align-items: center;
+  align-items: left;
 }
 
 #survey-info{
   border: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   flex-wrap: nowrap;
 }
 
@@ -65,8 +64,7 @@ input[type="radio"]{
   flex-direction: column;
   margin: 10px;
   padding: 10px;
-  width: 50%;
-  align-items: center;
+  align-items: left;
 }
 
 #favorite-feature{
@@ -76,6 +74,7 @@ input[type="radio"]{
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 #improvement{
@@ -85,6 +84,7 @@ input[type="radio"]{
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 input[type="checkbox"]{
@@ -98,7 +98,6 @@ input[type="checkbox"]{
 
 textarea {
   display: inline-flex;
-  flex-direction: column;
   justify-content: center;
   margin: 10px;
   padding: 10px;
