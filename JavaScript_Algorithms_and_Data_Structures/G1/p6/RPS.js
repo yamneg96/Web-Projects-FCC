@@ -4,6 +4,7 @@ function getRandomComputerResult() {
   return options[randomIndex];
 }
 
+
 function hasPlayerWonTheRound(player, computer) {
   return (
     (player === "Rock" && computer === "Scissors") ||
@@ -14,6 +15,23 @@ function hasPlayerWonTheRound(player, computer) {
 
 let playerScore = 0;
 let computerScore = 0;
+
+
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
+
+rockBtn.addEventListener("click", function () {
+  showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+  showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+  showResults("Scissors");
+});
 
 function getRoundResults(userOption) {
   const computerResult = getRandomComputerResult();
@@ -63,19 +81,3 @@ function resetGame() {
 }
 
 resetGameBtn.addEventListener("click", resetGame);
-
-const rockBtn = document.getElementById("rock-btn");
-const paperBtn = document.getElementById("paper-btn");
-const scissorsBtn = document.getElementById("scissors-btn");
-
-rockBtn.addEventListener("click", function () {
-  showResults("Rock");
-});
-
-paperBtn.addEventListener("click", function () {
-  showResults("Paper");
-});
-
-scissorsBtn.addEventListener("click", function () {
-  showResults("Scissors");
-});
