@@ -1,11 +1,50 @@
-h1, p{
+h1 {
   text-align: center;
 }
+p{
+  text-align: center;
+  font-style:italic;
+}
 body{
-  background-color: #1b1b32;
+  background: linear-gradient(#1b1b32, rgba(27, 27, 50, 0.8));
   color: #f3f3f3;
   font-family: sans-serif;
 }
+
 form{
   background-color: #1b1b32CC;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#personal-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#survey-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#favorite-feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+input[type="submit"]{
+  color: white;
+  background-color: greenyellow;
 }

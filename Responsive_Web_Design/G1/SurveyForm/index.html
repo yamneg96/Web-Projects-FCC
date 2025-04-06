@@ -9,12 +9,12 @@
     <h1>freeCodeCamp Survey Form</h1>
     <p>Thank you for taking the time to help us improve the platform</p>
     <form>
-      <fieldset>
+      <fieldset id="personal-info">
         <label for="full-name">Name<input id="full-name" name="full-name" type="text" placeholder="Enter your name" required/></label>
         <label for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required/></label>
         <label for="Age">Age (optional)<input id="Age" name="Age" type="number" placeholder="Age"/></label>
       </fieldset>
-      <fieldset>
+      <fieldset id="survey-info">
         Which option best describes your current role?
         <select>
           <option>Select current role</option>
@@ -29,7 +29,7 @@
         <label for="recommendation">
         <input id="notsure" name"recommendation" type="radio" value="r3"/> Not sure</label>
       </fieldset>
-      <fieldset>
+      <fieldset id="favorite-feature">
         What is your favorite feature fo freeCodeCamp?
         <select>
           <option>Select an option</option>
